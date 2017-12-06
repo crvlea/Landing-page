@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <title>Landing page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div>
-    <img src="banniere.jpg">
     <div class="col2">
     <h1>Ma landing page<h1>
       <h2>Inscrivez-vous à la newsletter</h2>
-      <form class="formulaire" action="index.html" method="post">
-        <input type="text" name="prénom" value="Prénom">
-        <input type="text" name="nom" value="Nom">
-        <input type="text" name="mail" value="Adresse mail">
+      <div class="formulaire">
+        <form action="index.html" method="post">
+          <input type="text" name="prénom" value="Prénom">
+          <input type="text" name="nom" value="Nom">
+          <input type="text" name="mail" value="Adresse mail">
+          <input type="submit" name="envoyer" value="Envoyer">
+        </form>
       </div>
-      </form>
+    </div>
+
     </div>
   </body>
 </html>
