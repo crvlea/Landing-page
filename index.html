@@ -9,17 +9,18 @@
   <body>
     <div>
     <div class="col2">
-    <h1>Ma landing page<h1>
-      <h2>Inscrivez-vous à la newsletter</h2>
+    <h1>Pinneapple Shop<h1>
+      <h2 id="login">Connectez-vous</h2>
       <div class="formulaire">
         <form action="index.html" method="post">
-          <h1 id="login">Login</h1>
-        <p id="account">Don't have an account ? </p>
-        <a id="titre">Create your <br>account.</a>
+
+        <p id="account">Vous n'avez pas de compte ? </p>
+        <a id="titre">Créer un compte.</a>
           <input type="text" name="prénom" value="Prénom">
           <input type="text" name="nom" value="Nom">
           <input type="text" name="mail" value="Adresse mail">
           <input class="bouton" type="submit" name="envoyer" value="Envoyer">
+          <img src="ananas.png" width="40" class="ananas" />
         </form>
       </div>
       <div class"img">
@@ -29,21 +30,21 @@
 
 
 
+
     </div>
 
-    <span id="clickme">Cliquez-moi !</span>
 
 <script>
     var clickme = document.getElementById('titre');
 
     clickme.addEventListener('click', function(e) {
-        e.target.innerHTML = 'Login now';
+        e.target.innerHTML = "S'enregistrer maintenant";
 
         var login = document.getElementById('login');
-        login.innerHTML = "Register";
+        login.innerHTML = "S'enregistrer";
 
         var account = document.getElementById('account');
-        account.innerHTML = "Do you already have an account ? ";
+        account.innerHTML = "Vous avez déjà un compte ? ";
 
     });
 </script>

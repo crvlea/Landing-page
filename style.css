@@ -37,7 +37,18 @@ div{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0px;
+  padding-top: 10px;
+  color:pink;
+}
+
+h2{
+  color: paleTurquoise;
 }
 
 form{
@@ -46,7 +57,7 @@ form{
 }
 
 body{
-  background-image: url(banniere.jpg);
+  background-image: url(banniere1.jpg);
   background-size: cover;
 }
 
@@ -70,6 +81,29 @@ text-decoration: underline;
 a:hover{
   color: red;
 }
+
+.ananas {
+  background-image: url(ananas.png);
+  max-width: 100%;
+  max-height: 100%;
+  display: inline;
+  vertical-align: middle;
+  visibility: visible;
+  /* this opacity property hides the vador */
+  opacity: 0;
+  margin-left: 65px;
+  animation: rond 5s infinite;
+}
+
+.ananas: hover{
+  opacity : 100;
+}
+
+input:hover ~ .ananas {
+  opacity: 1;
+}
+
+
 
 @media screen and (max-width:700px){
 	.col2{
